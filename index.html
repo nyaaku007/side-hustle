@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale="1">
+        <link rel="stylesheet" href="styles.css">
+
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/3/39/FreeCodeCamp_logo.png"> 
+        <title> creating error and succes message usinh html and css</title>
+    </head>
+
+
+
+    <body>
+       
+        
+        <div> 
+           <h1> <i>Fill in the following Details : </i></h1>
+
+           <form  onsubmit="alert('registration complete !')" method="get">
+            
+            <fieldset>
+           
+            <label for="fullname">Fullname</label>
+            <input type="text" name="fullname" placeholder="Fullname" required>
+             
+           
+            <label for="username">Username</label>
+            <input type="text" name="username" placeholder="Username" required>
+            
+           
+            <label for="email">Email</label>
+            <input type="text" name="email" placeholder="Email" required>
+            
+            <hr>
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" placeholder="Phone" required>
+            
+            <label for="password">Password</label>
+            <input type="text" name="password" placeholder="Password" required>
+             
+            
+           <div class="gender">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male">
+
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
+           </div>
+                      
+          <hr>            
+            
+            <button type="submit" id="Submit-btn" onclick="submit()">SUBMIT</button>
+             
+            <p class="error registration.error"></p> 
+
+            </fieldset>            
+           </form>           
+
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
