@@ -4,58 +4,56 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale="1">
-        <link rel="stylesheet" href="styles.css">
-
+        <link rel="stylesheet" href="index.css">
         <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/3/39/FreeCodeCamp_logo.png"> 
-        <title> creating error and succes message usinh html and css</title>
+        <title> Side hustle internship </title>
     </head>
-
-
 
     <body>
        
         
         <div> 
-           <h1> <i>Fill in the following Details : </i></h1>
-
+           <h1> <b>Fill in the following Details : </b></h1>
+           <h3><i>Week 2 task </i></h3>
            <form  onsubmit="alert('registration complete !')" method="get">
-            
-            <fieldset>
-           
+            <hr>
+            <p>                     
             <label for="fullname">Fullname</label>
             <input type="text" name="fullname" placeholder="Fullname" required>
-             
-           
+            </p>
+
+            <p>          
             <label for="username">Username</label>
             <input type="text" name="username" placeholder="Username" required>
-            
+            </p>
            
+            <p>
             <label for="email">Email</label>
-            <input type="text" name="email" placeholder="Email" required>
-            
-            <hr>
+            <input type="text" name="email" placeholder="Email" required>   
+            </p>
+
+            <p>
             <label for="phone">Phone</label>
-            <input type="tel" name="phone" placeholder="Phone" required>
-            
+            <input type="text" name="phone" placeholder="Phone" required>
+            </p>
+
+            <p>
             <label for="password">Password</label>
-            <input type="text" name="password" placeholder="Password" required>
+            <input  value="" id="myInput" type="password" name="password" placeholder="Password" required>
+            <input type="checkbox" onclick="myFunction()"> 👁
+            </p> 
              
-            
-           <div class="gender">
+            <p>
+            <label for="gender">Gender:</label> 
             <label for="male">Male</label>
             <input type="radio" name="gender" id="male">
-
             <label for="female">Female</label>
-            <input type="radio" name="gender" id="female">
-           </div>
-                      
-          <hr>            
+            <input type="radio" name="gender" id="female"> 
+            </p>
+            <hr>
             
-            <button type="submit" id="Submit-btn" onclick="submit()">SUBMIT</button>
-             
-            <p class="error registration.error"></p> 
-
-            </fieldset>            
+            <input type="submit" name="Submit" >
+                                 
            </form>           
 
         </div>
